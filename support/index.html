@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight Flow Support</title>
+  <style>
+    :root {
+      --bg: #f6f1ea;
+      --panel: #fffdf8;
+      --text: #211912;
+      --muted: #5f554b;
+      --line: #ddd0c1;
+      --accent: #8c4f2b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at right top, rgba(140, 79, 43, 0.12), transparent 26%),
+        linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 16px 50px rgba(54, 39, 24, 0.08);
+    }
+    .nav {
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .nav a { color: var(--accent); text-decoration: none; }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 46px); }
+    .meta { color: var(--muted); margin-bottom: 28px; }
+    h2 { margin-top: 28px; font-size: 22px; }
+    p, li { line-height: 1.75; color: var(--muted); }
+    ul { padding-left: 22px; }
+    .mail {
+      display: inline-block;
+      margin-top: 8px;
+      color: white;
+      background: linear-gradient(135deg, #9b5c2e, #6c3d1d);
+      border-radius: 999px;
+      padding: 10px 16px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="panel">
+      <div class="nav"><a href="../">Insight Flow</a> / Support</div>
+      <h1>Insight Flow Support</h1>
+      <div class="meta">Response target: within 3 business days</div>
+
+      <p>If you need help with Insight Flow, contact support or review the common questions below.</p>
+
+      <a class="mail" href="mailto:support@insightflow.app">support@insightflow.app</a>
+
+      <h2>Common Topics</h2>
+      <ul>
+        <li>How to enable or disable iCloud sync</li>
+        <li>Why microphone or speech permissions are required</li>
+        <li>How JSON and Markdown export works</li>
+        <li>How to recover deleted notes from Trash</li>
+        <li>What to do if Face ID unlock is unavailable</li>
+      </ul>
+
+      <h2>iCloud Sync</h2>
+      <p>Make sure iCloud Drive is enabled for your Apple Account and that Insight Flow has iCloud access enabled in system settings before turning on sync in the app. Sync covers text notes, tags, links, and voice transcripts. Image attachments and voice audio files stay on the device where they were added.</p>
+
+      <h2>Permissions</h2>
+      <p>Camera, Photo Library, Microphone, Speech Recognition, and Face ID are only requested when you use related features. Speech audio may be sent to Apple for transcription.</p>
+
+      <h2>Export</h2>
+      <p>Exports are generated on-device. Depending on your note library size, JSON or Markdown export may take a short time to prepare.</p>
+
+      <h2>Trash Recovery</h2>
+      <p>Deleted notes move to Trash first. You can restore them from Trash until you permanently delete them or empty Trash.</p>
+    </div>
+  </main>
+</body>
+</html>

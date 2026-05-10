@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insight Flow</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --panel: #fffdf7;
+      --text: #1f1a14;
+      --muted: #6b6257;
+      --line: #d8ccbb;
+      --accent: #9b5c2e;
+      --accent-strong: #6c3d1d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Noto Serif SC", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(155, 92, 46, 0.12), transparent 28%),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+    }
+    .hero, .card {
+      background: rgba(255, 253, 247, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(63, 41, 19, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .hero {
+      padding: 40px 32px;
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      color: var(--accent-strong);
+      background: rgba(155, 92, 46, 0.12);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+    }
+    p {
+      margin: 0;
+      line-height: 1.75;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 24px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+    }
+    .card p {
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-size: 15px;
+    }
+    .foot {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Insight Flow</div>
+      <h1>记录、整理、回顾你的想法流</h1>
+      <p>这是 Insight Flow 的公开信息页面，用于 App Store 上架资料中的支持网址与隐私政策网址。</p>
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h2>支持</h2>
+        <p>查看常见问题、功能说明，以及遇到 iCloud 同步、导出、权限或锁屏问题时的处理方式。</p>
+        <a class="button" href="./support/">打开支持页</a>
+      </article>
+      <article class="card">
+        <h2>隐私政策</h2>
+        <p>查看 Insight Flow 如何处理本地数据、iCloud 同步、权限请求与数据分享政策。</p>
+        <a class="button" href="./privacy/">打开隐私政策</a>
+      </article>
+    </section>
+    <div class="foot">Last updated: 2026-05-10</div>
+  </main>
+</body>
+</html>
